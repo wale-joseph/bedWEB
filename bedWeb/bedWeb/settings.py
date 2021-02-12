@@ -24,9 +24,9 @@ TEMP_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '840b@wp_^zrth!79^00-lc-b8#d02!2fxuj5had5l8zyyk+i(g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
