@@ -5,33 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>BEDWEB</title>
+    <title>CMESBAHF 4 COVID</title>
 </head>
 <body>
     <div>
         <div class="main container jumbotron">
-            <h1>One File Operation</h1>
-            <p>Wanna perform operation on 2 files, <a href="/twoFiles">Click here</a></p>
-            <p>Switch to <a href="/x_y_editor">CMESBAHF</a></p>
+            <h1>For CMESBAHF</h1>
+            <p>Add Lat and Long to your File (Downloaded from covid19hg.org) </p>
         </div>
         <div class="container">
-            <p>I want to </p>
+            
             <form action="" method="post" enctype="multipart/form-data">
                 {{form.as_p}}
                 {% csrf_token %}
                 <input type="submit" value="Submit">
-                <p></p>
-                <p>
-                            
-                         
-                </p>
+                
             </form>
             <div class="panel panel-default">
                 <div class="panel-body">
-                  <ul>
-                    <li>This web app is based on bedTools: a powerful toolset for genome arithmetics.</li>
-                    <li>We also acknowledge Alice Rathjen of DNA compass for the initial calculations</li>
-                  </ul>
+                  This web app is based on bedTools: a powerful toolset for genome arithmetic.
                   <ul>
                       <li> <a href="https://bedtools.readthedocs.io/en/latest/">Manual</a></li>
                       <li><a href="https://pubmed.ncbi.nlm.nih.gov/20110278/">Reference</a></li>
@@ -40,9 +32,6 @@
             </div>
         </div>
     </div>
-    
-
-    {% if output %} <p> {{ output }} </p> {% endif %}
 
 </body>
 </html>

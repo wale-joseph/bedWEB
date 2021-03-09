@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from bedApp import views
 from django.conf.urls import url
+from cmesbahf.views import x_y_editor
 
 urlpatterns = [
     url(r'^$', views.oneFile, name='oneFile'),
     url(r'^oneFile/', views.oneFile, name='oneFile'),
     path('admin/', admin.site.urls),
     url(r'^twoFiles/', views.twoFiles, name='twoFiles'),
+    url(r'^x_y_editor', x_y_editor, name='x_y_editor')
 ]

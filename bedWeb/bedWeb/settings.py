@@ -24,7 +24,7 @@ TEMP_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '840b@wp_^zrth!79^00-lc-b8#d02!2fxuj5had5l8zyyk+i(g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bedApp'
+    'bedApp',
+    'cmesbahf'
 ]
 
 MIDDLEWARE = [
